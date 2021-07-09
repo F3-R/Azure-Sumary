@@ -1,0 +1,57 @@
+.introduction{
+    position: relative;
+    margin: 10px 7% 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 30px 10px; */
+}
+.intro-elem{
+    box-sizing: border-box;
+    padding: 10px 30px 10px;
+    width: 45%;
+    /* display: inline-block; */
+}
+
+/* /////////////////////////// ÍNDICE BEGINS ///////////////////////////*/
+
+.index {
+    /* margin: 10px 10% 10px; */
+    padding: 10px 30px 10px;
+    border-radius: 20px;
+    background-color: var(--orange);
+}
+.index H2 {
+    color: var(--white);
+}
+.index ol{
+    /* padding-left: 0; */
+    list-style-type: none;
+    /* color: lightgray; */
+    counter-reset: mikado;
+}
+.index ol li {
+	counter-increment: mikado;
+	padding: 5px 0;
+}
+.index ol.first {
+	margin-top: 5px;	
+}
+.index ol li:before {
+	content: counters(mikado, '.') ' ';
+}
+.index a, a:link, a:visited{
+    padding: 5px;
+    color: var(--yellow);
+}
+.index a:hover, a:focus, a:active{
+    color: var(--orange);
+    background-color: var(--yellow);
+}
+
+/* /////////////////////////// ÍNDICE ENDS ///////////////////////////*/
+
+.intro-right img {
+    height: auto;
+    width: 100%;
+}

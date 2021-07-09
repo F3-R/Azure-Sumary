@@ -1,0 +1,17 @@
+body{
+    background-color: var(--dark-blue);
+    font-size: 1.2em;
+}
+
+.content {
+    margin: 50px 5% 20px;
+    padding: 25px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    text-align: justify;
+}
+
+#main-title{
+    color: var(--white);
+    text-align: center;
+}
