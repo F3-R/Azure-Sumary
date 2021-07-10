@@ -3,10 +3,13 @@
         <meta charset="utf-8">
         <title>Cloud Suffers</title>
         <link rel="shortcut icon" href="resources/cloudSuffers_min.jfif">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="styles/introduction.css">
         <link rel="stylesheet" href="styles/headers.css">
+        <link rel="stylesheet" href="styles/introduction.css">
+        <link rel="stylesheet" href="styles/acknowledgement.css">
+        <link rel="stylesheet" href="styles/about.css">
     </head>
     <body>
         <H1 id="main-title">
@@ -14,30 +17,85 @@
         </H1>
         <div class="introduction">
             <div class="index intro-elem">
-                <H2>
+                <H1>
                     Índice
-                </H2>
+                </H1>
                 <ol>
-                    <li><a href="#reto01">Primer reto</a></li>
+                    <li><a href="#mod1">Primer módulo</a></li>
                     <ol>
-                        <li><a href="#reto01">Primer reto</a></li>
+                        <!-- <li><a href="./routes/challenges/challenge01.html">otra página</a></li> -->
+                        <li><a href="#azureFundamentalsIntroduction">Introducción a los fundamentos de Azure</a></li>
+                        <ol>
+                            <li><a href="#cloudModels">Tipos de modelos en la nube</a></li>
+                            <li><a href="#cloudServiceModels">Modelos de servicio en la nube</a></li>
+                        </ol>
                     </ol>
+                    <li><a href="#acknowledgement">Agradecimientos</a></li>
+                    <li><a href="#about">Acerca de los autores</a></li>
                 </ol>
             </div>
             <div class="intro-right intro-elem">
                 <img src="resources/cloudSuffers_min.jfif" alt="">
             </div>
         </div>
-        <!-- <div class="content">
-            <ol>
-                <li><a href="https://web.microsoftstream.com/video/f34ea46e-998b-49b0-850b-41bf1a83f337">Parte 1</a></li>
-                <li><a href="https://web.microsoftstream.com/video/6d8525d9-ee61-4308-a661-df1e6d8df476">Parte 2</a></li>
-                <li><a href="https://web.microsoftstream.com/video/dc086d7b-f2ac-4fa2-8389-74ce2c118db8">Parte 3</a></li>
-                <li><a href="https://web.microsoftstream.com/video/2ce61dab-ceab-4cdd-ae4b-ea687f198865">Parte 4</a></li>
-            </ol>
-        </div> -->
+        <div id="azureFundamentalsIntroduction" class="content">
+            <H1 class="title" id="mod1">Módulo 1: Introducción a los fundamentos de Azure</H1>
+            <div id="cloudModels">
+                <H2>Tipos de modelos en la nube</H2>
+                <p>
+                    Actualmente existen tres modelos que dividen el los servicios de la nube según su implementación:
+                    <i>nube pública</i>, <i>nube privada</i> y <i>nube híbrida</i>
+                </p>
+                <H3>Nube pública</H3>
+                <p>
+                    Este servicio se ofrece a través de Internet y está disponible para cualquier usuario de la red.
+                    Este modelo es propiedad de un proveedor de servicios de la nube de terceros.
+                </p>
+                <p>
+                    Principales diferencias:
+                    <ul>
+                        <li>No existen gastos en equipos (CapEx) para escalar verticalmente.</li>
+                        <li>Las aplicaciones pueden configurarse para estar disponibles o no disponibles de manera inmediata.</li>
+                        <li>En este modelo sólo se paga por lo que se utiliza.</li>
+                    </ul>
+                </p>
+                <H3>Nube privada</H3>
+                <p>
+                    Este servicio se ofrece para usuarios específicos destinados por la empresa u organización que
+                    se encuentra encargada de esta. Físicamente puede ubicarse en el centro de datos del encargado
+                    o puede estar hospedada por un proveedor de servicios.
+                </p>
+                <p>
+                    Principales diferencias:
+                    <ul>
+                        <li>Se requiere hadware para el inicio y el mantenimiento.</li>
+                        <li>Se tiene el control total de los recursos y la seguridad.</li>
+                        <li>La responsabilidad del mantenimiento y las actualizaciones del hardware
+                            son de la organización</li>
+                    </ul>
+                </p>
+                <H3>Nube híbrida</H3>
+                <p>
+                    Este modelo tiene la facilidad de compartir datos y aplicaciones entre nubes regidas para este modelo
+                    debido a que combina las características del modelo de nube pública y privada.
+                </p>
+                <p>
+                    Principales diferencias
+                    <ul>
+                        <li>Ofrece flexibilidad.</li>
+                        <li>Se puede determinan el lugar en el que las aplicaciones serán ejecutadas.</li>
+                        <li>Se tiene el control de la seguridad, el cumplimiento o el campo legal</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div id="cloudServiceModels" class="content">
+            <img src="resources/cloudComputingServicesComparison.png" alt="Cuadro comparativo de los servicios en la nube">
+        </div>
         <div class="content">
-            <H2 class="title" id="reto01">Reto 1</H2>
+            d
+        </div>
+        <div class="content">
             <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eros in cursus turpis massa. Venenatis a condimentum vitae sapien pellentesque habitant morbi. Commodo ullamcorper a lacus vestibulum sed arcu. Vulputate eu scelerisque felis imperdiet proin fermentum leo. Sit amet volutpat consequat mauris nunc congue. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Volutpat maecenas volutpat blandit aliquam. Facilisis mauris sit amet massa. Nibh sit amet commodo nulla facilisi nullam vehicula. Nisl pretium fusce id velit. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci.
 
@@ -49,6 +107,29 @@
 
                 Sollicitudin nibh sit amet commodo nulla facilisi nullam. Pretium nibh ipsum consequat nisl vel pretium lectus quam. Dignissim diam quis enim lobortis scelerisque. Lectus vestibulum mattis ullamcorper velit sed ullamcorper. Netus et malesuada fames ac turpis egestas integer eget. Eros in cursus turpis massa tincidunt dui ut ornare. Adipiscing tristique risus nec feugiat in fermentum. Id aliquet lectus proin nibh nisl. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Suscipit tellus mauris a diam maecenas. Felis donec et odio pellentesque diam volutpat commodo sed. Eget nullam non nisi est sit amet facilisis magna etiam. A diam maecenas sed enim ut sem. Varius vel pharetra vel turpis nunc. Dictumst vestibulum rhoncus est pellentesque. Elementum curabitur vitae nunc sed velit dignissim sodales. Nulla pharetra diam sit amet.
             </div>
+        </div>
+        <div class="acknowledgement" id="acknowledgement">
+            <H2>Agradecimientos</H2>
+            <p>
+                Al Sherpa <span>José Jesús Guzmán Eusebio</span> por su paciencia y dedicación,
+                así como su excelente material y amplia explicación en el contenido de este curso.
+                Agradecemos su entusiasmo ya que siempre nos anima a dar lo mejor de nosotros.
+            </p>
+            <p>
+                A <span>Microsoft</span> por brindarnos los recursos y el personal capacitado para facilitar
+                el acceso a las herramientas necesarias para experimentar con el cómputo en la nube, así como el
+                material didáctico con el cual nos hemos apoyado para realizar el primer reto de este curso y con el
+                que podremos aprender todo lo necesario para obtener nuestro certificado de 
+                Microsoft Azure Fundamentals AZ-900.
+            </p>
+        </div>
+        <div class="about" id="about">
+            <H2>Acerca de los autores</H2>
+            Este material fue elaborado por:
+            <ul>
+                <li>Maria Fernanda Merlo Simoni</li>
+                <li>Martí Galdino Castillo Ávila</li>
+            </ul>
         </div>
     </body>
 </html>

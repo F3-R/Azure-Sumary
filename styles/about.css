@@ -1,0 +1,7 @@
+.about{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: var(--dark-blue);
+    background-color: #312113;
+}

@@ -1,0 +1,16 @@
+.acknowledgement {
+    background-color: var(--orange);
+    border-radius: 20px;
+    padding: 10px 30px 10px;
+    margin: 50px 5% 20px;
+}
+
+.acknowledgement H2 {
+    color: var(--white);
+    text-align: center;
+}
+
+.acknowledgement p span {
+    font-weight: bold;
+    color: var(--white);
+}

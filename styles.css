@@ -1,7 +1,14 @@
 body{
+    padding: 0;
+    margin: 0;
     background-color: var(--dark-blue);
-    font-family: "Courier";
+    font-family: "Montserrat";
+    /* font-family: "Courier"; */
     font-size: 1.2em;
+}
+
+H1, H2, H3, H4, H5, H6 {
+    color: var(--white);
 }
 
 .content {
@@ -13,6 +20,9 @@ body{
 }
 
 #main-title{
+    margin: 10px;
+    padding: 20px;
+    font-size: 3em;
     color: var(--white);
     text-align: center;
 }
