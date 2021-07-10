@@ -24,12 +24,20 @@
                     <li><a href="#mod1">Primer módulo</a></li>
                     <ol>
                         <!-- <li><a href="./routes/challenges/challenge01.html">otra página</a></li> -->
-                        <li><a href="#azureFundamentalsIntroduction">Introducción a los fundamentos de Azure</a></li>
+                        <li><a href="#azureFundamentalsIntroduction">Fundamentos de Azure</a></li>
                         <ol>
                             <li><a href="#cloudModels">Tipos de modelos en la nube</a></li>
                             <li><a href="#cloudServiceModels">Modelos de servicio en la nube</a></li>
+                            <ol>
+                                <li><a href="#iaas">Infraestructura como servicio</a></li>
+                                <li><a href="#paas">Plataforma como servicio</a></li>
+                                <li><a href="#saas">Software como servicio</a></li>
+                                <li><a href="#serverless">Serverless</a></li>
+                            </ol>
                         </ol>
                     </ol>
+                    <li><a href="#mod2">Segundo módulo</a></li>
+                    <li><a href="#glossary">Glosario</a></li>
                     <li><a href="#acknowledgement">Agradecimientos</a></li>
                     <li><a href="#about">Acerca de los autores</a></li>
                 </ol>
@@ -39,7 +47,7 @@
             </div>
         </div>
         <div id="azureFundamentalsIntroduction" class="content">
-            <H1 class="title" id="mod1">Módulo 1: Introducción a los fundamentos de Azure</H1>
+            <H1 class="title" id="mod1">Módulo 1: Fundamentos de Azure</H1>
             <div id="cloudModels">
                 <H2>Tipos de modelos en la nube</H2>
                 <p>
@@ -48,7 +56,7 @@
                 </p>
                 <H3>Nube pública</H3>
                 <p>
-                    Este servicio se ofrece a través de Internet y está disponible para cualquier usuario de la red.
+                    Este servicio se ofrece a través de Internet y está <u>disponible para cualquier usuario de la red</u>.
                     Este modelo es propiedad de un proveedor de servicios de la nube de terceros.
                 </p>
                 <p>
@@ -61,7 +69,7 @@
                 </p>
                 <H3>Nube privada</H3>
                 <p>
-                    Este servicio se ofrece para usuarios específicos destinados por la empresa u organización que
+                    Este servicio se ofrece para <u> usuarios específicos destinados por la empresa u organización </u> que
                     se encuentra encargada de esta. Físicamente puede ubicarse en el centro de datos del encargado
                     o puede estar hospedada por un proveedor de servicios.
                 </p>
@@ -76,26 +84,107 @@
                 </p>
                 <H3>Nube híbrida</H3>
                 <p>
-                    Este modelo tiene la facilidad de compartir datos y aplicaciones entre nubes regidas para este modelo
+                    Este modelo tiene la facilidad de <u>compartir datos y aplicaciones entre nubes</u> regidas para este modelo
                     debido a que combina las características del modelo de nube pública y privada.
                 </p>
                 <p>
-                    Principales diferencias
+                    Principales diferencia:
                     <ul>
                         <li>Ofrece flexibilidad.</li>
                         <li>Se puede determinan el lugar en el que las aplicaciones serán ejecutadas.</li>
-                        <li>Se tiene el control de la seguridad, el cumplimiento o el campo legal</li>
+                        <li>Se tiene el control de la seguridad, el cumplimiento o el campo legal.</li>
                     </ul>
                 </p>
             </div>
-        </div>
-        <div id="cloudServiceModels" class="content">
-            <img src="resources/cloudComputingServicesComparison.png" alt="Cuadro comparativo de los servicios en la nube">
+            <div id="cloudServiceModels">
+                <H2>Modelos de servicios en la nube</H2>
+                <p>
+                    Los modelos de los servicios en la nube definen los <u>niveles de responsabilidad compartida</u>
+                    de un proveedor de nube y un inquilino de la nube.
+                </p>
+                <p>
+                    Para ilustrar las características de cada modelo y sus diferencias, creamos
+                    un cuadro comparativo mostrado en la <span><a href="#table1">Tabla 1</a></span>.
+                    Los servicios del proveedor son las responsabilidades de las que se libera el
+                    usuario.
+                </p>
+                <div id="table1" class="images">
+                    <img src="resources/cloudComputingServicesComparison.png" alt="Cuadro comparativo de los servicios en la nube">
+                    <span>Tabla 1. Comparación de los modelos de servicios en la nube</span>
+                </div>
+                <p>
+                    En la <span><a href="#img1">Imagen 1</a></span> se muestran ilustrados los servicios que el proveedor
+                    ofrece en cada modelo. Posteriormente, se desglosan las características de los modelos
+                </p>
+                <div id="img1" class="images">
+                    <img src="resources/characteristicsCoveredByEachService.png" alt="Campos que abarca cada servicio">
+                    <span>Imagen 1. Diferencias en los campos que cubre cada modelo de servicio en la nube</span>
+                </div>
+                <div id="iaas">
+                    <H3>Infraestructura como servicio (IaaS)</H3>
+                    <p>
+                        Es el modelo más flexible de todos los modelos. Ofrece un completo control sobre el hardware que
+                        corre la aplicación. <b>En vez de comprar el hardware, se renta.</b>
+                    </p>
+                    <H4>Ventajas</H4>
+                    <ul>
+                        <li><b>Sin gastos de capital (CapEx)</b>. Los usuarios no tienen costos iniciales.</li>
+                        <li><b>Agilidad</b>. Las aplicaciones se configuran con rapidez para ser accesibles y
+                            desprovisionarlas cuando sea necesario.</li>
+                        <li><b>Administración</b>. El usuario se encarga de administrar y mantener los servicios que ha
+                            aprovicionado, mientras que el proveedor de la nube administra y mantiene la infraestructura en la nube.</li>
+                        <li><b>Modelo basado en el consumo</b>. Sólo se paga por lo que se usa. Opera en un modelo de gastos operativos
+                            (OpEx).</li>
+                        <li><b>Aptitudes</b>. No se requiere de conocimientos técnicos avanzados para implementar y usar una nube pública.</li>
+                        <li><b>Ventajas que ofrece</b>. Las organizaciones pueden utilizar las aptitudes y la experiencia del proveedor de nube
+                            para asegurarse de que las cargas de trabajo se configuren de forma que sean seguras y tengan alta disponibilidad.</li>
+                        <li><b>Flexibilidad</b>. Dispone de control para configurar y administrar el hardware que ejecuta una aplicación.</li>
+                    </ul>
+                    <H4>Desventaja</H4>
+                    <li><b>Limitaciones</b>. Puede que existan limitaciones en la forma en la que se ejecuta una aplicación.</li>
+                </div>
+                <div id="paas">
+                    <H3>Plataforma como servicio (PaaS)</H3>
+                    <p>
+                        Con este modelo, el usuario se puede centrar en el desarrollo de las aplicaciones ya que el proveedor de la 
+                        nube controla la administración de la plataforma.
+                        Además de las ventajas y consideraciónes de la <span><a href="#iaas">IaaS</a></span> tiene unas ventajas adicionales.
+                    </p>
+                    <H4>Ventajas además de las mencionadas en IaaS</H4>
+                    <li><b>Productividad</b>. Los usuarios se pueden centrar únicamente en el desarrollo de aplicaciones, ya que el proveedor de
+                        nube lleva a cabo toda la administración de plataformas.</li>
+                </div>
+                <div id="saas">
+                    <H3>Software como servicio (SaaS)</H3>
+                    <p>
+                        Es un modelo de pago por uso, es decir, los usuarios sólo pagan por el software que utilizan en un modelo de subscripción.
+                        Además de las ventajas y consideraciónes de la <span><a href="#paas">PaaS</a></span> tiene unas ventajas adicionales.
+                    </p>
+                    <H4>Ventajas además de las mencionadas en PaaS</H4>
+                    <li><b>Productividad</b>.  Los usuarios pueden acceder a los mismos datos de la aplicación desde cualquier lugar.</li>
+                    <H4>Desventaja</H4>
+                    <li><b>Limitaciones</b>. Puede que existan limitaciones en la forma en la que se ejecuta una aplicación. Para estos casos,
+                        el modelo <span><a href="#paas">PaaS</a></span> es más acertado debido a que en este modelo se tiene control directo
+                        con las características necesarioas.</li>
+                </div>
+                <div id="serverless">
+                    <H3>Cómputo sin servidor o Serverless</H3>
+                    <p>
+                        Al igual que <span><a href="#paas">PaaS</a></span>, el cómputo sin servidor permite la creación más ágil de aplicaiones gracias
+                        a que elimina la necesidad de administrar la estructura. En estas aplicaciones sin servidor, el proveedor de servicios en la nube
+                        aprovisiona, escala y adminsitra automáticamente la infraestructura necesaria para ejecutar el código. Esta arquitectura es muy
+                        escalable y se controlan por medio de eventos; las funciones sólo se ejecutan al ser llamadas.
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="content">
-            d
+            <H2 class="title" id="mod2">Módulo 2:</H2>
         </div>
-        <div class="content">
+        <div class="content" id="glossary">
+            <H2>Glosario</H2>
+        </div>
+        <!-- <div class="content">
             <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eros in cursus turpis massa. Venenatis a condimentum vitae sapien pellentesque habitant morbi. Commodo ullamcorper a lacus vestibulum sed arcu. Vulputate eu scelerisque felis imperdiet proin fermentum leo. Sit amet volutpat consequat mauris nunc congue. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Volutpat maecenas volutpat blandit aliquam. Facilisis mauris sit amet massa. Nibh sit amet commodo nulla facilisi nullam vehicula. Nisl pretium fusce id velit. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci.
 
@@ -107,7 +196,7 @@
 
                 Sollicitudin nibh sit amet commodo nulla facilisi nullam. Pretium nibh ipsum consequat nisl vel pretium lectus quam. Dignissim diam quis enim lobortis scelerisque. Lectus vestibulum mattis ullamcorper velit sed ullamcorper. Netus et malesuada fames ac turpis egestas integer eget. Eros in cursus turpis massa tincidunt dui ut ornare. Adipiscing tristique risus nec feugiat in fermentum. Id aliquet lectus proin nibh nisl. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Suscipit tellus mauris a diam maecenas. Felis donec et odio pellentesque diam volutpat commodo sed. Eget nullam non nisi est sit amet facilisis magna etiam. A diam maecenas sed enim ut sem. Varius vel pharetra vel turpis nunc. Dictumst vestibulum rhoncus est pellentesque. Elementum curabitur vitae nunc sed velit dignissim sodales. Nulla pharetra diam sit amet.
             </div>
-        </div>
+        </div> -->
         <div class="acknowledgement" id="acknowledgement">
             <H2>Agradecimientos</H2>
             <p>
@@ -125,11 +214,9 @@
         </div>
         <div class="about" id="about">
             <H2>Acerca de los autores</H2>
-            Este material fue elaborado por:
-            <ul>
-                <li>Maria Fernanda Merlo Simoni</li>
-                <li>Martí Galdino Castillo Ávila</li>
-            </ul>
+            <p>Este material fue elaborado por:</p>
+                <p>Martí Galdino Castillo Ávila</p>
+                <p>Fernanda Merlo</p>
         </div>
     </body>
 </html>
