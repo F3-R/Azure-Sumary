@@ -1,3 +1,27 @@
+@media (min-width: 1050px){
+    /* .acknowledgement img {
+        margin: 50px 20% 20px;
+    } */
+    .acknowledgement #left {
+        height: 100px;
+    }
+    .acknowledgement #right {
+        height: 80px;
+    }
+}
+
+@media (max-width: 1051px){
+    /* .acknowledgement img {
+        align-self: right;
+    } */
+    .acknowledgement #left {
+        height: 50px;
+    }
+    .acknowledgement #right {
+        height: 40px;
+    }
+}
+
 .acknowledgement {
     background-color: var(--orange);
     border-radius: 20px;

@@ -1,16 +1,69 @@
+#main-title{
+    letter-spacing: .3em;
+    font-size: 3em;
+    font-family: "Helvetica";
+    font-weight: bolder;
+    text-align: center;
+}
+
+.titulo span{
+  padding: .5em;
+  display: block;  
+  text-transform: uppercase;
+}
+
+.invertido
+{
+  background: linear-gradient(
+    to right, 
+    var(--orange) 30%, 
+    var(--yellow) 45%, 
+    var(--blue) 55%, 
+    var(--dark-blue) 70%);  
+}
+
+.invertido span
+{
+  background-color: var(--white);
+  color: #333;
+  mix-blend-mode: screen;
+  /* box-shadow: 
+    inset 0 2px 0 0 black,
+    inset 0 -2px 0 0 black; */
+}
+
+@media (min-width: 1050px){
+    .introduction {
+        display: flex;
+    }
+    .intro-elem {
+        box-sizing: border-box;
+        width: 45%;
+    }
+}
+
+@media (max-width: 1051px){
+    .introduction {
+        display: block;
+    }
+    .intro-elem {
+        margin: 20px;
+        width: 90%;
+    }
+}
+
 .introduction{
     position: relative;
     margin: 10px 7% 10px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     /* padding: 10px 30px 10px; */
 }
+
 .intro-elem{
     box-sizing: border-box;
     padding: 10px 30px 10px;
-    width: 45%;
-    /* display: inline-block; */
 }
 
 /* /////////////////////////// ÍNDICE BEGINS ///////////////////////////*/
@@ -18,8 +71,8 @@
 .index {
     /* margin: 10px 10% 10px; */
     /* padding: 10px 30px 10px; */
-    border-radius: 20px;
     background-color: var(--orange);
+    border-radius: 20px;
 }
 .index ol{
     /* padding-left: 0; */
@@ -52,4 +105,5 @@
 .intro-right img {
     height: auto;
     width: 100%;
+    border-radius: 20px;
 }

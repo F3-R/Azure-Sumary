@@ -11,8 +11,19 @@ H1, H2, H3, H4, H5, H6 {
     color: var(--white);
 }
 
+@media (min-width: 1050px){
+    .content {
+        margin: 50px 20% 20px;
+    }
+}
+
+@media (max-width: 1051px){
+    .content {
+        margin: 50px 5% 20px;
+    }
+}
+
 .content {
-    margin: 50px 20% 20px;
     padding: 25px;
     background-color: var(--blue);
     border-radius: 20px;
@@ -41,11 +52,11 @@ H1, H2, H3, H4, H5, H6 {
 
 /* Images with foother end */
 
-
-#main-title{
-    margin: 10px;
-    padding: 20px;
-    font-size: 3em;
-    color: var(--white);
-    text-align: center;
+.home{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--white);
+    padding: 5px;
+    border-radius: 50%;
 }
